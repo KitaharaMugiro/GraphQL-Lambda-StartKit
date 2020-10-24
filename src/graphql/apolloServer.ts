@@ -4,7 +4,6 @@ import * as mutations from './resolvers/mutations';
 import typeDefs from './type-defs';
 
 const NODE_ENV = process.env.NODE_ENV;
-
 const IS_DEV = !NODE_ENV || !['production'].includes(NODE_ENV);
 
 const resolvers = {

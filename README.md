@@ -1,22 +1,40 @@
-<!--
-title: 'AWS Apollo Lambda (NodeJS & Typescript)'
-description: 'This example provides a setup for a Lambda Graphql API with apollo'
-layout: Doc
-framework: v1
-platform: AWS
-language: nodeJS
-authorLink: 'https://github.com/jmpfrazao'
-authorName: 'Miguel Frazao'
-authorAvatar: 'https://avatars3.githubusercontent.com/u/28927258?s=460&v=4'
--->
-# Apollo Lambda GraphQL API Example
-This example demonstrates how to setup a lambda graphql API with apollo
+# 概要
+GraphQLサーバをApollo + TypeScriptで構築し、Lambdaにデプロイする。
+参照元は https://github.com/serverless/examples/tree/master/aws-node-typescript-apollo-lambda
 
-- I used apiKeys to secure the endpoints but you can add custom authorizers
+# 使い方
+npxが使用できる環境で、以下のコマンドを実行する。
 
-## Use Cases
-- Small graphql API
-- Creating a temporary lambda API that can easily be converted to standard GraphQL API
+```
+npx degit https://github.com/KitaharaMugiro/GraphQL-Lambda-StartKit <Directory Name>
+```
+
+# 内容
+
+- [x] TypeScript対応
+- [x] Apolloサーバ
+- [x] Query
+- [ ] Mutation
+- [ ] Subscription
+- [ ] 型の自動生成
+- [ ] API Key
+- [x] ServerlessFrameworkを利用したデプロイ
+- [ ] 
+- [ ] 
+- [ ] 
+
+# ServerlessFrameworkを利用したデプロイ
+前提: CLIインストール済み(https://www.serverless.com/framework/docs/getting-started/)
+
+① 以下の環境変数をセットする。
+
+```
+AWS_ACCESS_KEY_ID=accesskey
+AWS_SECRET_ACCESS_KEY=sshhh
+```
+
+② コマンド`npm run deploy`でデプロイする
+
 
 ## Setup
 - Setup your env file for AWS deployment with:
