@@ -9,6 +9,8 @@ npxが使用できる環境で、以下のコマンドを実行する。
 npx degit https://github.com/KitaharaMugiro/GraphQL-Lambda-StartKit <Directory Name>
 ```
 
+サービス名、ロール名、テーブル名などを変更ののち利用する。IDではなくサービス名で同一性を判断している可能性がある。
+
 # 内容
 
 - [x] TypeScript対応
