@@ -8,7 +8,7 @@ import DummyObject from './objects/DummyObject';
 import Mutation from './root/Mutation'; // tslint:disable-line ordered-imports
 import Query from './root/Query'; // tslint:disable-line ordered-imports
 
-const typeDefStrings = [
+const typeDefs = [
   // Inputs
   DummyInput,
   // Objects
@@ -18,6 +18,5 @@ const typeDefStrings = [
   Query,
 ];
 
-const typeDefs = typeDefStrings.map(typeDef => gql(typeDef));
 
 export default typeDefs;

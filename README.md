@@ -35,17 +35,5 @@ AWS_SECRET_ACCESS_KEY=sshhh
 ② コマンド`npm run deploy`でデプロイする
 
 
-## Setup
-- Setup your env file for AWS deployment with:
-  - - APOLLO_LAMBDA_KEY
-  - - NODE_ENV
-
-- sls deploy
-
-## Usage
-- To test it locally with serverless-offline by running: 
-  `npm run dev`
-- set `x-api-key` header with key `your-api-key-that-is-at-least-characters-long`
-
-## Future
-- Add support for subscription with Redis
+## デモ
+npm run devでplaygroundを開き、右側のdocumentを見てクエリを確認できる

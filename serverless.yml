@@ -19,8 +19,8 @@ functions:
     handler: src/handler.graphqlHandler
     events:
       - http:
-          path: graphql
+          path: /graphql
           method: post
       - http:
-          path: graphql
+          path: /graphql
           method: get
