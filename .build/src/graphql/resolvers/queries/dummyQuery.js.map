@@ -1,1 +1,0 @@
-{"version":3,"file":"dummyQuery.js","sourceRoot":"","sources":["../../../../../src/graphql/resolvers/queries/dummyQuery.ts"],"names":[],"mappings":";;AAEA,KAAK,UAAU,UAAU,CACvB,CAAM,EACN,IAAqB;IAErB,MAAM,EAAE,MAAM,EAAE,GAAG,IAAI,CAAC;IAExB,OAAO,CAAC,GAAG,CAAC,wBAAwB,MAAM,EAAE,CAAC,CAAC;IAE9C,OAAO;QACL,SAAS,EAAE,OAAO;QAClB,UAAU,EAAE,QAAQ;KACrB,CAAC;AACJ,CAAC;AAED,kBAAe,UAAU,CAAC"}
