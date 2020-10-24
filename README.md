@@ -14,10 +14,9 @@ npx degit https://github.com/KitaharaMugiro/GraphQL-Lambda-StartKit <Directory N
 - [x] TypeScript対応
 - [x] Apolloサーバ
 - [x] Query
-- [ ] Mutation
-- [ ] Subscription
+- [x] Mutation
 - [ ] 型の自動生成
-- [ ] API Key
+- [ ] DynamoDBとの接続
 - [x] ServerlessFrameworkを利用したデプロイ
 - [ ] 
 - [ ] 
