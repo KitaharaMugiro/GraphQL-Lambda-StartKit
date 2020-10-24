@@ -15,7 +15,7 @@ npx degit https://github.com/KitaharaMugiro/GraphQL-Lambda-StartKit <Directory N
 - [x] Apolloサーバ
 - [x] Query
 - [x] Mutation
-- [ ] DynamoDBとの接続
+- [x] DynamoDBとの接続
 - [x] ServerlessFrameworkを利用したデプロイ
 - [ ] 
 - [ ] 
@@ -36,3 +36,16 @@ AWS_SECRET_ACCESS_KEY=sshhh
 
 ## デモ
 npm run devでplaygroundを開き、右側のdocumentを見てクエリを確認できる
+
+## Dynamoとの接続テスト
+ローカル
+
+```
+sls invoke local -f hello
+```
+
+本番
+
+```
+sls invoke -f hello
+```
