@@ -1,4 +1,5 @@
 .serverless_nextjs
+.build
 
 # Logs
 logs
