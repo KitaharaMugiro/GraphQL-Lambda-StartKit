@@ -1,0 +1,39 @@
+service: serverless-graphql-dynamo
+
+frameworkVersion: ">=1.21.0 <2.0.0"
+
+provider:
+  name: aws
+  stage: dev
+  region: ap-northeast-1
+
+plugins:
+  - serverless-dynamodb-local
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    port: 4000
+    webpackIncludeModules: true
+
+resources:
+  Resources:
+    # DynamoDBの構築
+    DynamoDbTable:
+      Type: "AWS::DynamoDB::Table"
+      Properties:
+        # キーの型を指定
+        AttributeDefinitions:
+          - AttributeName: HK
+            AttributeType: S
+          - AttributeName: RK
+            AttributeType: S
+        # キーの種類を指定（ハッシュorレンジキー）
+        KeySchema:
+          - AttributeName: HK
+            KeyType: HASH
+          - AttributeName: RK
+            KeyType: RANGE
+        BillingMode: PAY_PER_REQUEST
+        # テーブル名の指定
+        TableName: TableName
